@@ -5,7 +5,7 @@ RUN addgroup -g 985 -S users
 RUN adduser -S -G users -u 1000 -s /bin/sh -h /home/mudrii mudrii
 
 # Gcloud versioin https://github.com/google-cloud-sdk/google-cloud-sdk/releases
-ENV CLOUD_SDK_VERSION 225.0.0
+ENV CLOUD_SDK_VERSION 228.0.0
 ENV PATH /google-cloud-sdk/bin:$PATH
 
 RUN apk --no-cache update && \
